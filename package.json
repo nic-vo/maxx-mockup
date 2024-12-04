@@ -6,6 +6,6 @@
 		"tailwindcss": "^3.4.16"
 	},
 	"scripts": {
-		"css": "tailwindcss -i ./src/input.css -o ./stylesheet.css --watch"
+		"css": "tailwindcss -i ./src/input.css -o ./stylesheet.css --minify --watch"
 	}
 }
