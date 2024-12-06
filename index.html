@@ -4,15 +4,69 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sam | Web Design @ MAXX</title>
-	<link rel='stylesheet' href='./stylesheet.css'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./stylesheet.css">
 </head>
 <body>
-	<header></header>
-	<main>
-		<h1>Hello world!</h1>
-	</main>
-	<footer>
-		<p>&copy;2016 Sam&apos; Web Dev All Rights Reserved</p>
-	</footer>
+	<div class="flex flex-col items-center w-full gap-16 font-helv">
+		<header class="w-full z-10">
+			<div class="flex justify-between items-center w-full pt-8 px-32">
+				<img src="imgs/logo.png" alt="This is the MAXX Potential logo." class="max-h-24 w-auto" />
+				<hgroup class="block">
+					<h1 class="text-4xl font-bold">HELLO, I&apos;M SAM.</h1>
+					<p class="text-4xl font-light">Web Designer</p>
+				</hgroup>
+		</div>
+		</header>
+		<main class="flex flex-col items-center gap-16">
+			<h1 class="sr-only">This is my work as a web designer!</h1>
+			<div class="w-full h-[32rem] overflow-hidden">
+				<img src="imgs/hero1.jpg" alt="This is an aerial photo of a deep blue lake, a forest, and the bottom of a mountain with clouds obscuring the upper heights of the slope." class="w-full -translate-y-[32rem] h-auto">
+			</div>
+			<section class='flex flex-col gap-8'>
+				<h2 class="font-helv text-5xl font-bold text-center">PORTFOLIO</h2>
+				<ul class="*:block flex gap-8">
+					<li>
+						<section class='flex flex-col items-center gap-4'>
+							<hgroup class="text-center border-b-2 border-b-maxxblue p-4 w-3/4">
+								<h3 class='text-2xl font-light'>TECHNOLINE</h3>
+								<p class='font-bask italic text-2xl text-maxxred'>technoline.com</p>
+							</hgroup>
+							<div class="aspect-video w-96 overflow-hidden drop-shadow">
+								<img src="imgs/company_photo1.jpg" alt="" class="w-full h-auto"/>
+							</div>
+						</section>
+					</li>
+					<li>
+						<section class='flex flex-col items-center gap-4'>
+							<hgroup class="text-center border-b-2 border-b-maxxblue p-4 w-3/4">
+								<h3 class='text-2xl font-light'>MAJESTIQUE</h3>
+								<p class='font-bask italic text-2xl text-maxxred'>majestique.com</p>
+							</hgroup>
+							<div class="aspect-video w-96 overflow-hidden drop-shadow">
+								<img src="imgs/company_photo2.jpg" alt="" class="w-full h-auto"/>
+							</div>
+						</section>
+					</li>
+					<li>
+						<section class='flex flex-col items-center gap-4'>
+							<hgroup class="text-center border-b-2 border-b-maxxblue p-4 w-3/4">
+								<h3 class='text-2xl font-light'>SILVERZIM</h3>
+								<p class='font-bask italic text-2xl text-maxxred'>silverzim.com</p>
+							</hgroup>
+							<div class="aspect-video w-96 overflow-hidden drop-shadow">
+								<img src="imgs/company_photo3.jpeg" alt="" class="w-full h-auto"/>
+							</div>
+						</section>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer class='w-full bg-maxxgray text-white p-16'>
+			<p class='text-center'>&copy;2016 Sam&apos;s Web Dev All Rights Reserved</p>
+		</footer>
+	</div>
 </body>
 </html>
